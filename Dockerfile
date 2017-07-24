@@ -3,7 +3,8 @@ FROM arm32v7/debian
 MAINTAINER Tete Plaza <11tete11@gmail.com>
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
-RUN groupadd -r mysql && useradd -r -g mysql mysql
+RUN groupadd -r mysql 
+RUN useradd -r -g mysql mysql
 
 # FATAL ERROR: please install the following Perl modules before executing /usr/local/mysql/scripts/mysql_install_db:
 # File::Basename
