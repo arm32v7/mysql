@@ -1,5 +1,5 @@
 # Pull base image
-FROM arm32v7/debian
+FROM resin/rpi-raspbian
 MAINTAINER Tete Plaza <11tete11@gmail.com>
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
